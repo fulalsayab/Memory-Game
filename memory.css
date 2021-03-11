@@ -1,0 +1,43 @@
+:root {
+    background-color: #ecf5ff;
+    text-align: center
+}
+
+/* UTILITIES */
+.tiles{
+    width:15%;
+    height: 200px;
+    margin: 5px 1%;
+    float: left;
+    background-color:green;
+    box-shadow: 2px 2px;
+}
+.title {
+    text-align: center;
+    text-shadow: 0 0 1px #FF0000, 0 0 3px #0000FF;
+}
+.subTitle{
+    text-align: center;
+    font: -apple-system-subheadline;
+}
+.button{
+margin: 5px 0;
+background-color: white;
+color: black;
+border: 2px solid #f0f5f5;
+}
+#start{
+    display:block;
+}
+#reset{
+   display:block;
+}
+.button:hover {
+    background-color: #ccd6dd; 
+    color: white;
+}
+.tiles:hover {
+    background-color: #009973;
+    color: white;
+}
+
