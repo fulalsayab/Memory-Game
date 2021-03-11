@@ -32,3 +32,32 @@ let clickedTitleArray = [];
 let isDuplicate = false;
 //Boolean if the game isc start
 let isGameStart = false;
+//adding eventlistiner for the tiles and the buttons
+document.getElementById("start").addEventListener("click", startGame);
+document.getElementById("reset").addEventListener("click", resetGame);
+document.getElementById("tile1").addEventListener("click", () => {
+  tiles("tile1");
+});
+
+//Function that resets the tiles
+resetVarSallow = () => {
+  lastColoe = "";
+  click = 0;
+  clickedTitleArray = [];
+  isDuplicate = false;
+  isGameStart = true;
+  for (let i = 1; i < 11; i++) {
+    let elem = "tile" + i;
+    document.getElementById(elem).style.backgroundColor = "green";
+  }
+};
+
+startGame = () => {
+  resetVarSallow();
+};
+
+resetGame = () => {
+  resetVarSallow();
+};
+
+tiles = (tile) => {};
